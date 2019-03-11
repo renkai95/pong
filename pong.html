@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="pong.js"></script>
+    </head>
+    <body>
+        <h1>Pong</h1>
+        <div>Click on the left paddle and move the mouse to control the player</div>
+        <div>Click on the mouse again to release control</div>
+        <div>This game terminates when either player reaches a score of 11</div>
+        <div>
+            You: <div id="left">0</div><div id="leftwin"></div>   Skynet: <div id="right">0</div><div id="rightwin"></div></div>
+        <svg id="canvas" width="600" height="600"/>
+    </body>
+</html>
